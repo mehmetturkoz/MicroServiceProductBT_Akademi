@@ -20,7 +20,7 @@ public class ProductController {
     //api/productID/{productID}
     @DeleteMapping("delete/{productID}")
     public ResponseEntity delete(@PathVariable Integer productID){
-        productService.delete(productID);
+        productService.deleteById(productID);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
@@ -38,9 +38,5 @@ public class ProductController {
 
       return ResponseEntity.ok(productList);
     }
-
-
-
-
 
 }

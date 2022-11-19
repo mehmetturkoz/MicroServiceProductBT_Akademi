@@ -49,7 +49,7 @@ public class ProductService extends AbstractProductService{
     }
 
     @Override
-    public void delete(Integer productID) {
+    public void deleteById(Integer productID) {
         try {
             productRepository.deleteById(productID);
         }catch (IllegalArgumentException e)
