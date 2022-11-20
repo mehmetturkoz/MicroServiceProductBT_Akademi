@@ -1,0 +1,10 @@
+{
+  "name": "bt-akademi-mehmet-product",
+
+  "buildpacks":
+          [
+            {
+              "url": "heroku/gradle"
+            }
+          ]
+}
