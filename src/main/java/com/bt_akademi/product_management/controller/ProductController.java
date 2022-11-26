@@ -17,7 +17,7 @@ public class ProductController {
     @Autowired
     private AbstractProductService productService;
 
-    //api/productID/{productID}
+    //api/delete/{productID}
     @DeleteMapping("delete/{productID}")
     public ResponseEntity delete(@PathVariable Integer productID){
         productService.deleteById(productID);
